@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          if (saved === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>GbengaDevs | Web &amp; App Developer</title>
+    <meta
+      name="description"
+      content="GbengaDevs builds responsive business websites and digital experiences from Nigeria. View work for fashion, hairdressing, barbing and restaurant brands."
+    />
+    <meta name="theme-color" content="#0B1420" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GbengaDevs | Web & App Developer" />
+    <meta property="og:description" content="Planning, directing, and shipping premium websites and powerful apps." />
+    <meta property="og:url" content="https://gbengadevs.netlify.app/" />
+    <meta property="og:image" content="https://gbengadevs.netlify.app/images/meta.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="GbengaDevs — I build modern, fast and scalable web experiences" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GbengaDevs | Web & App Developer" />
+    <meta name="twitter:description" content="Planning, directing, and shipping premium websites and powerful apps." />
+    <meta name="twitter:image" content="https://gbengadevs.netlify.app/images/meta.png" />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="apple-touch-icon" href="/images/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
